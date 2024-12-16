@@ -30,7 +30,7 @@ public class NoticeService {
 	public String postToNoticeServer(Notice notice) {
 		JsonObject jObj = Notice.objToJson(notice);
 
-		//constructing response to send to server
+		//constructing request to send to server
 		RequestEntity<String> req = RequestEntity
 			.post(url+"notice")
 			.contentType(MediaType.APPLICATION_JSON)
